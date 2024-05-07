@@ -1,22 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import { Card, CardContent, Grid } from '@mui/material';
+import CardDetails from './components/CardDetails';
 
 function App() {
+
+  const arr = [{}, {}, {}, {}, {}]
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Grid container spacing={3} style={{ padding: 20, width: "85%"}}>
+          {arr.map((item) => (
+            <Grid item xs={4}>
+              <CardDetails />
+            </Grid>
+          ))}
+        </Grid>
       </header>
     </div>
   );
