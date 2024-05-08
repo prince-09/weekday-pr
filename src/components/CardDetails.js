@@ -6,7 +6,7 @@ export default function CardDetails({ jobDetails }){
     return (
         <Card variant="outlined" sx={{ boxShadow: 2}} style={{ borderRadius: 20}}>
             <CardContent style={{ display: "flex", flexDirection: "column", alignItems: "start", padding: 15 }}>
-                <Chip label="⌛ Posted 10 days ago" />
+                <Chip variant="caption" label="⌛ Posted 10 days ago" />
                 <div style={{ display: "flex", flexDirection: "row", marginTop: 10, gap: 8}}>
                     <img src={logoUrl} style={{ height: "30px", marginTop: "10px", marginLeft: "4px"}} />
                     <div style={{ display: "flex", flexDirection: "column", alignItems: "start"}}>
