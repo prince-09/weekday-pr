@@ -21,7 +21,7 @@ export default function CardDetails({ jobDetails }){
                 <Typography variant="caption" style={{ textAlign: "start"}}>{jobDetailsFromCompany}</Typography>
                 <Typography variant="caption">Min experience</Typography>
                 <Typography variant="body2">{minExp} - {maxExp} years</Typography>
-                <Button variant="contained" style={{ width: "100%", backgroundColor: green.A400, color: "black", textTransform: "capitalize", fontWeight: "bold", marginTop: 10}}>Easy Apply</Button>
+                <Button variant="contained" style={{ width: "100%", backgroundColor: green.A400, color: "black", textTransform: "capitalize", fontWeight: "bold", marginTop: 10}}>⚡ Easy Apply</Button>
             </CardContent>
             
         </Card>
